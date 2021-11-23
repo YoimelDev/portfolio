@@ -1,6 +1,8 @@
 @use 'base/variables' as v;
 
 .header {
+	position: fixed;
+	width: 100vw;
 	margin: 2rem 0;
 
 	&__nav {
