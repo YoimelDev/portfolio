@@ -1,0 +1,25 @@
+.footer {
+	display: grid;
+	place-items: center;
+	padding: 1.5rem;
+
+	&__socialLinks {
+		display: flex;
+		gap: 4rem;
+	}
+
+	&__made {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 1.4rem;
+	}
+
+	&__credit {
+		font-size: 1rem;
+
+		a {
+			color: inherit;
+		}
+	}
+}
