@@ -1,0 +1,49 @@
+.about {
+	&__skillList {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		margin: 2rem 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: flex;
+			align-items: center;
+			position: relative;
+			padding-left: 2rem;
+		}
+
+		li::before {
+			content: '▹';
+			position: absolute;
+			left: 0px;
+			color: #33b1ff;
+			font-size: 1.3rem;
+			line-height: 12px;
+		}
+	}
+
+	&__img {
+		width: 70%;
+		margin: 6rem auto;
+		position: relative;
+
+		img {
+			border-radius: 1rem;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 2rem;
+			left: 2rem;
+			border: 2px solid rgb(6, 147, 227);
+			border-radius: 1rem;
+			z-index: -1;
+		}
+	}
+}
