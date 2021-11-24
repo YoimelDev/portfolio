@@ -3,7 +3,8 @@
 .header {
 	position: fixed;
 	width: 100vw;
-	margin: 2rem 0;
+	padding: 2rem 0;
+	z-index: 100;
 
 	&__nav {
 		display: flex;
@@ -21,6 +22,7 @@
 
 				svg {
 					width: 5rem;
+					z-index: 100;
 				}
 
 				&--line {
@@ -61,6 +63,47 @@
 					stroke-dasharray: 90 207;
 					stroke-dashoffset: -134;
 					stroke-width: 6;
+				}
+			}
+
+			&__aside {
+				display: grid;
+				place-items: center;
+				height: 100vh;
+				width: 0;
+				position: fixed;
+				top: 0;
+				right: 0;
+				background-color: v.$blueDark;
+				transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+				&.opened {
+					width: min(75vw, 40rem);
+				}
+
+				&__nav {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 4rem;
+
+					a {
+						color: v.$whiteP;
+					}
+
+					&--resume {
+						margin: 10% auto 0px;
+						padding: 18px 50px;
+						color: rgb(6, 147, 227);
+						background-color: transparent;
+						border: 2px solid rgb(6, 147, 227);
+						border-radius: 2.375rem;
+						font-size: 1.3rem;
+						line-height: 1;
+						text-decoration: none;
+						cursor: pointer;
+						transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+					}
 				}
 			}
 		}

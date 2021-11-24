@@ -1,2 +1,2 @@
-const menuBtn=document.querySelector(".header__nav__menu__btn");menuBtn.addEventListener("click",()=>{menuBtn.classList.toggle("opened")});
+const menuBtn=document.querySelector(".header__nav__menu__btn"),menuAside=document.querySelector(".header__nav__menu__aside"),blur=document.createElement("div");function blurBg(){document.body.contains(blur)?document.body.removeChild(blur):document.body.appendChild(blur)}blur.classList.add("blur"),menuBtn.addEventListener("click",()=>{menuBtn.classList.toggle("opened"),menuAside.classList.toggle("opened"),blurBg()}),document.addEventListener("click",e=>{e.target===blur&&(menuBtn.classList.remove("opened"),menuAside.classList.remove("opened"),blurBg())});
 //# sourceMappingURL=app.js.map

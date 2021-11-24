@@ -27,6 +27,15 @@ p {
 	padding: 0 2.5rem;
 }
 
+.blur {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(18, 31, 61, 0);
+	backdrop-filter: blur(8px);
+}
+
 a {
 	text-decoration: none;
 }
