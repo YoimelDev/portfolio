@@ -1,9 +1,13 @@
 @use 'base/variables' as v;
 
 .header {
+	display: grid;
 	position: fixed;
 	width: 100vw;
-	padding: 2rem 0;
+	height: 10rem;
+	// background-color: rgba(10, 25, 47, 0.85);
+	// backdrop-filter: blur(10px);
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	z-index: 100;
 
 	&__nav {
@@ -108,4 +112,18 @@
 			}
 		}
 	}
+}
+.down,
+.up {
+	height: 70px;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.down {
+	transform: translateY(calc(70px * -1));
+}
+
+.up {
+	transform: translateY(0px);
+	box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
 }
