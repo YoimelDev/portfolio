@@ -114,6 +114,15 @@
 						cursor: pointer;
 						transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 					}
+
+					@media (min-width: 768px) {
+						gap: 5rem;
+						font-size: 2rem;
+
+						&--resume {
+							font-size: 1.6rem;
+						}
+					}
 				}
 			}
 		}
