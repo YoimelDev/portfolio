@@ -16,6 +16,14 @@
 			margin-left: 20px;
 			background-color: #233554;
 		}
+
+		@media (min-width: 768px) {
+			font-size: 3.2rem;
+
+			&::after {
+				width: 75%;
+			}
+		}
 	}
 
 	&__skillList {
@@ -64,6 +72,10 @@
 			border: 2px solid rgb(6, 147, 227);
 			border-radius: 1rem;
 			z-index: -1;
+		}
+
+		@media (min-width: 768px) {
+			max-width: 30rem;
 		}
 	}
 }

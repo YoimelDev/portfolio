@@ -14,7 +14,7 @@
 
 	&__email {
 		margin-top: 5rem;
-		padding: 1.25rem 1.75rem;
+		padding: 1.3rem 2rem;
 		color: rgb(6, 147, 227);
 		background-color: transparent;
 		border: 2px solid rgb(6, 147, 227);
@@ -24,5 +24,18 @@
 		text-decoration: none;
 		cursor: pointer;
 		transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+		@media (min-width: 768px) {
+			font-size: 1.6rem;
+		}
+	}
+
+	@media (min-width: 768px) {
+		max-width: 60rem;
+		margin: 0 auto;
+
+		p {
+			font-size: 1.7rem;
+		}
 	}
 }

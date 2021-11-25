@@ -71,3 +71,10 @@ h4 {
 .hidden {
 	overflow: hidden;
 }
+
+@media (min-width: 768px) {
+	p,
+	li {
+		font-size: 1.7rem;
+	}
+}

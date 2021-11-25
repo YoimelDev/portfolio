@@ -4,6 +4,10 @@
 	&__title {
 		margin: 1rem 0 4rem;
 		font-size: 2.6rem;
+
+		@media (min-width: 768px) {
+			font-size: 3.2rem;
+		}
 	}
 
 	&__list {
@@ -19,6 +23,10 @@
 			h3 {
 				margin-bottom: 3rem;
 				font-size: 2.2rem;
+
+				@media (min-width: 768px) {
+					font-size: 2.5rem;
+				}
 			}
 
 			&__techList {
