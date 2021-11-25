@@ -47,3 +47,22 @@
 		transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 	}
 }
+
+@media (min-width: 768px) {
+	.hero {
+		&__content {
+			h2,
+			h3 {
+				font-size: 6rem;
+			}
+
+			p {
+				font-size: 2rem;
+			}
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
