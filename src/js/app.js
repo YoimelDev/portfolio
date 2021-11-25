@@ -12,6 +12,7 @@ document.addEventListener('click', e => {
     if (click === blur) {
         menuBtn.classList.remove('opened');
         menuAside.classList.remove('opened');
+        document.body.classList.remove('hidden')
 
         blurBg();
     }
@@ -37,7 +38,7 @@ document.addEventListener('scroll', () => {
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('opened');
     menuAside.classList.toggle('opened');
-
+    document.body.classList.toggle('hidden')
     blurBg();
 })
 
@@ -45,6 +46,7 @@ navMenu.forEach(link => {
     link.addEventListener('click', () => {
         menuBtn.classList.remove('opened');
         menuAside.classList.remove('opened');
+        document.body.classList.remove('hidden')
         blurBg();
     })
 })

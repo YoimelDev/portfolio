@@ -37,6 +37,10 @@ p {
 	backdrop-filter: blur(8px);
 }
 
+.hidden {
+	overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 }
