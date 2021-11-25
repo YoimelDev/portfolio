@@ -1,3 +1,5 @@
+@use 'base/variables' as v;
+
 .hero {
 	display: flex;
 	flex-direction: column;
@@ -5,13 +7,24 @@
 	min-height: 100vh;
 
 	&__content {
-		h2 {
-			color: #33b1ff;
-		}
 		h4,
 		h2 {
 			margin-bottom: 2rem;
 		}
+
+		h2 {
+			color: v.$whiteP;
+		}
+
+		h3 {
+			color: v.$whiteTitle;
+		}
+
+		h4 {
+			color: v.$blue;
+			font-size: 1.6rem;
+		}
+
 		p {
 			margin: 2rem 0 0 0;
 			font-size: 1.4rem;
@@ -26,7 +39,7 @@
 		color: rgb(6, 147, 227);
 		background-color: transparent;
 		border: 2px solid rgb(6, 147, 227);
-		border-radius: 2.375rem;
+		border-radius: 0.4rem;
 		font-size: 1.3rem;
 		line-height: 1;
 		text-decoration: none;

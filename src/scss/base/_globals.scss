@@ -10,6 +10,7 @@ html {
 *:after {
 	box-sizing: inherit;
 }
+
 body {
 	font-family: v.$font;
 	font-size: 1.6rem;
@@ -19,26 +20,8 @@ body {
 }
 p {
 	color: v.$whiteP;
+	font-size: 1.4rem;
 	line-height: 1.8;
-}
-
-.container {
-	max-width: 120rem;
-	margin: 0 auto;
-	padding: 0 2.5rem;
-}
-
-.blur {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: rgba(18, 31, 61, 0);
-	backdrop-filter: blur(8px);
-}
-
-.hidden {
-	overflow: hidden;
 }
 
 a {
@@ -68,4 +51,23 @@ h3 {
 }
 h4 {
 	font-size: 2.6rem;
+}
+
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 0 2.5rem;
+}
+
+.blur {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(18, 31, 61, 0);
+	backdrop-filter: blur(8px);
+}
+
+.hidden {
+	overflow: hidden;
 }
