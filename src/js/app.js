@@ -4,13 +4,7 @@ const blur = document.createElement('div');
 blur.classList.add('blur');
 let lastScrollTop = 0;
 const header = document.querySelector('header');
-
-menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('opened');
-    menuAside.classList.toggle('opened');
-
-    blurBg();
-})
+const navMenu = document.querySelectorAll('.header__nav__menu__aside__nav a')
 
 document.addEventListener('click', e => {
     let click = e.target;
@@ -22,14 +16,6 @@ document.addEventListener('click', e => {
         blurBg();
     }
 })
-
-function blurBg() {
-    if (!document.body.contains(blur)) {
-        document.body.appendChild(blur);
-    } else {
-        document.body.removeChild(blur);
-    }
-}
 
 document.addEventListener('scroll', () => {
     let st = window.pageYOffset || document.documentElement.scrollTop;
@@ -47,3 +33,26 @@ document.addEventListener('scroll', () => {
 
     lastScrollTop = st <= 0 ? 0 : st;
 })
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('opened');
+    menuAside.classList.toggle('opened');
+
+    blurBg();
+})
+
+navMenu.forEach(link => {
+    link.addEventListener('click', () => {
+        menuBtn.classList.remove('opened');
+        menuAside.classList.remove('opened');
+        blurBg();
+    })
+})
+
+function blurBg() {
+    if (!document.body.contains(blur)) {
+        document.body.appendChild(blur);
+    } else {
+        document.body.removeChild(blur);
+    }
+}
